@@ -9,11 +9,14 @@
         "cms",
         "laravel"
     ],
+    "homepage": "https://github.com/laravelcity/laravel-categories",
     "license": "MIT",
     "authors": [
         {
             "name": "saeid hooshyar",
-            "email":  "saeedhooshyar70@gmail.com"
+            "email":  "saeedhooshyar70@gmail.com",
+            "homepage": "https://saeidhooshyar.ir",
+            "role": "Developer"
         }
     ],
     "autoload": {
