@@ -31,7 +31,9 @@
             ]
         }
     },
-    "require": {},
+    "require": {
+        "laravelcity/laravel-categories": "^1.0"
+    },
     "config": {
         "sort-packages": true
     },

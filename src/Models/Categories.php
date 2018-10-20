@@ -94,18 +94,15 @@ class Categories extends Model
      * @param $type
      * @return Categories
      */
-    function getCategory($id,$type=null){
+    function getCategory($id){
         if(is_numeric($id))
             $model=self::where('id',$id)->select();
         else
             $model=self::where('slug',$id)->select();
 
-        if($type)
-            $model->where('model_type',$type);
+        $model->where('model_type',$this->modelType);
 
-        $cat=$model->first();
-
-        return $cat;
+        return $model->first();
     }
 
     /**
