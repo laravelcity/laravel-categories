@@ -13,10 +13,7 @@
     "authors": [
         {
             "name": "saeid hooshyar",
-            "email": [
-                "saeedhooshyar70@gmail.com",
-                "saeid@laravelcity.com"
-            ]
+            "email":  "saeedhooshyar70@gmail.com"
         }
     ],
     "autoload": {
