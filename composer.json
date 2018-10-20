@@ -24,5 +24,12 @@
             "Laravelcity\\Categories\\": "src/"
         }
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Laravelcity\\Categories\\CategoriesServiceProvider"
+            ]
+        }
+    },
     "require": {}
 }
