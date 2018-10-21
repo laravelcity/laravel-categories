@@ -24,18 +24,8 @@
             "Laravelcity\\Categories\\": "src/"
         }
     },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Laravelcity\\Categories\\CategoriesServiceProvider"
-            ]
-        }
-    },
     "require": {
         "laravelcity/laravel-categories": "^1.0"
-    },
-    "config": {
-        "sort-packages": true
     },
     "minimum-stability": "dev",
     "prefer-stable": true
