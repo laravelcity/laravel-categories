@@ -23,17 +23,21 @@ trait HtmlMethods
      * @param Collection $categories
      * @return array
      */
-    public function categoryLists ()
+    public function categoryLists ($categories=[],$parent=false)
     {
         $data = [];
-        foreach ($this->rootCategories() as $category) {
-            $data[] = [
-                'id' => $category->id ,
-                'title' => $category->title ,
-                'slug' => $category->slug ,
-                'parent' => $category->parent ,
-                'children' => $this->CategoryLists($category->child()) ,
-            ];
+        $categories=(count($categories)==0 && !$parent)?$this->rootCategories():$categories;
+
+        if(count($categories)>0){
+            foreach ($categories as $category) {
+                $data[] = [
+                    'id' => $category->id ,
+                    'title' => $category->title ,
+                    'slug' => $category->slug ,
+                    'parent' => $category->parent ,
+                    'children' => $this->categoryLists($category->child(),true) ,
+                ];
+            }
         }
         return $data;
     }
